@@ -1,5 +1,7 @@
 # Backbone.ioBind
 
+This fork allows for namespaces with depths of more than 1 
+
 Backbone.ioBind allows you to bind socket.io events to backbone model & collection events.
 Also includes `backbone.iosync.js`, a drop in replacement for `Backbone.sync` that uses socket.io.
 
@@ -64,7 +66,6 @@ namespace tag for that model.
 As with the default sync method, for a given model, ioSync will default to the `url` of the collection
 that model is a part of, else it will use the models `urlRoot`.
 
-If your url has a depth of more than one, only the first will be used. Example: `/posts/comments` will still only have a namespace of `posts`.*
 
 ### RPC / Callbacks
 
